@@ -1,0 +1,21 @@
+{
+  "name": "sql_",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -p",
+    "watch": "webpack --watch",
+    "start": "webpack -p && node ./dist/bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^2.14.0",
+    "fastify-postgres": "^2.0.0",
+    "pg": "^8.0.3",
+    "webpack": "^4.43.0",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
