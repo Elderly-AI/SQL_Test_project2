@@ -1135,7 +1135,7 @@ class ForumUsersController{
 //TODO RUN SERVER
 const start = async () => {
     try {
-        await fastify.listen(5000);
+        await fastify.listen(5000, '0.0.0.0');
         fastify.log.info(`server listening on ${fastify.server.address().port}`);
     } catch (err) {
         fastify.log.error(err);
