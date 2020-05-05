@@ -63,4 +63,4 @@ EXPOSE 5000
 
 ENV PGPASSWORD docker
 
-CMD service postgresql start && psql -h localhost -d docker -U docker -p 5432 -a -q -f ./database/db_script.sql && npm start
+CMD service postgresql start && psql -h localhost -d docker -U docker -p 5432 -a -q -f ./database/db_script.sql && node ./dist/bundle.js
